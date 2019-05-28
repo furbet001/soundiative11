@@ -8,13 +8,10 @@ public class gameManager : MonoBehaviour
     public List<GameObject> videoList = null;
     public List<GameObject> audioList = new List<GameObject>();
 
+    public int randomSound;
+    public GameObject newsound; 
 
-
-    int randomSound;
-
-
-
-    void Start()
+     void Start()
     {
 
         randomSound = Random.Range(0, 4);
@@ -26,5 +23,10 @@ public class gameManager : MonoBehaviour
 
     }
 
+    public void ButtonPressCheck()
+    {
+        //Debug.Log(GameObject.
 
+
+    }
 }
