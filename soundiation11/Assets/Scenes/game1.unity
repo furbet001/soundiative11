@@ -141,15 +141,15 @@ RectTransform:
   m_GameObject: {fileID: 170822544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7998862, y: 2.0032904, z: 1}
   m_Children:
   - {fileID: 520459860}
   m_Father: {fileID: 2004096694}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -235, y: -22}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 520, y: 84}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170822546
@@ -594,7 +594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869403074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 4.9, z: 27.52}
+  m_LocalPosition: {x: -2, y: 4.9, z: 10.71}
   m_LocalScale: {x: 50.844677, y: 39.377857, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -981,7 +981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.8, y: 85.1}
+  m_AnchoredPosition: {x: -3.8, y: -21}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330331781
@@ -1058,7 +1058,7 @@ RectTransform:
   m_GameObject: {fileID: 1614505579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7998862, y: 2.00329, z: 1}
   m_Children:
   - {fileID: 430236713}
   m_Father: {fileID: 2004096694}
@@ -1066,7 +1066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -241, y: -16}
+  m_AnchoredPosition: {x: -743, y: -152}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614505581
@@ -1117,7 +1117,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 1
+          m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1492,6 +1492,31 @@ PrefabInstance:
       propertyPath: m_WaitForFirstFrame
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1325908477154208953, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -643.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325908477154208953, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.013927
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325908477154208953, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.281312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325908477154208953, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.170531
+      objectReference: {fileID: 0}
+    - target: {fileID: 1325908477154208953, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -273.17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9894f7ed385ddf544aa1b7dc350a22f0, type: 3}
 --- !u!1001 &4943955955710965633
@@ -1575,6 +1600,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WaitForFirstFrame
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954766357893, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2056244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954766357893, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.6597514
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954766357893, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1910458
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954213498538, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -643.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954213498538, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.013927
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954213498538, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.2813125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954213498538, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1705309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4943955954213498538, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -277.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c34f56da6bc8ceb4eb7033a0037b5f25, type: 3}
