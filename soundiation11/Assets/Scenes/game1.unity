@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 170822548}
   - component: {fileID: 170822547}
   - component: {fileID: 170822546}
+  - component: {fileID: 170822549}
   m_Layer: 5
   m_Name: plastic bag playbutton
   m_TagString: Untagged
@@ -148,7 +149,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -321, y: 0.2}
+  m_AnchoredPosition: {x: -235, y: -22}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170822546
@@ -191,15 +192,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1318268886}
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 170822549}
+        m_MethodName: ButtonPress
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 0
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4891697, g: 0.9528302, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -241,6 +242,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170822544}
   m_CullTransparentMesh: 0
+--- !u!114 &170822549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170822544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e229e6d46776f743b76f116ce444350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraM: {fileID: 921873338}
+  index: 0
 --- !u!1 &277862930
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,9 +361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'play1
-
-'
+  m_Text: Select
 --- !u!222 &430236715
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -427,7 +440,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play
+  m_Text: 'Select '
 --- !u!222 &520459862
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -690,24 +703,14 @@ MonoBehaviour:
   - {fileID: 8274491475789298723, guid: 7161dba2d72179a46b8f068568e9aaa2, type: 3}
   - {fileID: 1896814940062429576, guid: 06f83a0d242159d4e892a32b37f6d889, type: 3}
   - {fileID: 1896814940062429576, guid: 06f83a0d242159d4e892a32b37f6d889, type: 3}
+  randomSound: 0
+  newsound: {fileID: 0}
 --- !u!4 &950757648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1325908477728239994, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
     type: 3}
   m_PrefabInstance: {fileID: 1325908478388131946}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &950757650 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1325908477728239992, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1325908478388131946}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9177a8aea81b74b4e99573ec1821431d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &966031206
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,18 +936,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1192368595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ca47b670695634e882edf8ff46e66c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e229e6d46776f743b76f116ce444350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraM: {fileID: 0}
+  index: 0
 --- !u!4 &1318268885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4943955954476980308, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
-    type: 3}
-  m_PrefabInstance: {fileID: 4943955955710965633}
-  m_PrefabAsset: {fileID: 0}
---- !u!328 &1318268886 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 4943955954476980311, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
     type: 3}
   m_PrefabInstance: {fileID: 4943955955710965633}
   m_PrefabAsset: {fileID: 0}
@@ -1042,6 +1041,7 @@ GameObject:
   - component: {fileID: 1614505583}
   - component: {fileID: 1614505582}
   - component: {fileID: 1614505581}
+  - component: {fileID: 1614505584}
   m_Layer: 5
   m_Name: tissue playbutton
   m_TagString: Untagged
@@ -1064,9 +1064,9 @@ RectTransform:
   m_Father: {fileID: 2004096694}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 308, y: -6}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -241, y: -16}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614505581
@@ -1109,15 +1109,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 950757650}
-        m_MethodName: playvideo
-        m_Mode: 1
+      - m_Target: {fileID: 1614505584}
+        m_MethodName: ButtonPress
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3356162, g: 1, b: 0.15566039, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1159,6 +1159,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614505579}
   m_CullTransparentMesh: 0
+--- !u!114 &1614505584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614505579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e229e6d46776f743b76f116ce444350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraM: {fileID: 921873338}
+  index: 0
 --- !u!1 &1645174790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1387,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2140236095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4943955954213498534, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 4943955955710965633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140236100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140236095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a58c506cb699e499fe3e106376de2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1325908478388131946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1453,7 +1485,7 @@ PrefabInstance:
     - target: {fileID: 1325908477728239995, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1325908477728239995, guid: 9894f7ed385ddf544aa1b7dc350a22f0,
         type: 3}
@@ -1537,7 +1569,7 @@ PrefabInstance:
     - target: {fileID: 4943955954476980311, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4943955954476980311, guid: c34f56da6bc8ceb4eb7033a0037b5f25,
         type: 3}
